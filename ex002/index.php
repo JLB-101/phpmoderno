@@ -51,7 +51,6 @@
     </section>
     <!-- js scripts -->
     <script src="/js/topnav.js"></script>
-
 </body>
 
 </html>
