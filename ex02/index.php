@@ -31,7 +31,7 @@
             <!-- PHP-scope -->
             <?php
 
-            date_default_timezone_get("Africa/Maputo");
+            //date_default_timezone_get("Africa/Maputo");
             echo "Hoje e dia: "  .$date("d/M/Y");
             echo "e a hora atual e " .date("G:i:s Y");
 
