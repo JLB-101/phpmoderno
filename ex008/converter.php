@@ -32,46 +32,64 @@
             <!-- php-code -->
             <?php
 
+            include_once("../ex008/testeapi.php");
+
+            //
+            $padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
+
             //getting value from index.php | obtendo valor do index.php
             $n = $_GET["n"] ?? $n = 0.00;
 
-            //convert MT to R$ | converter Metical para real
-            $r = ($n / 12.86);
+            //real to dollar
+            $r = $n;
 
-            //convert MT to US$ | converter Metical para dolar
-            $u = ($n / 63.25);
+            //get values( dollar to real) from api
+            $cotecao;
+
+            //convert dollar to real: USD($)-RBL(R$) | conversao de dollar para metical, valor de compra.
+            $dolar = $r / $cotecao;
+
+            //
+            $metical = $r * 12.82;
 
 
 
+
+
+
+            echo ('<div><b>Fonte dos dados: API (</b><a href="https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial=%2709-15-2023%27&@dataFinalCotacao=%2709-22-2023%27&$top=1&$orderby=dataHoraCotacao%20desc&$format=text/html&$select=cotacaoCompra,dataHoraCotacao" target="_blank" rel="noopener noreferrer" >Banco Central do Brasil</a>)</div>');
             //print result | imprimir resultado 
             echo "
                 <di>
-                    <p><b>NB:</b> acording to the currncy exchange rate of the day | de acordo com a taxa de cambio do dia :
-                    <h5>22/09/23, 14:56 UTC</h5>
-                    
-                   
-                    
-                       <h6> MZN(MT) - BRL(R$): 0,077 R$ | BRL(R$) - MZN(MT): 12.86 MT  </h6>
-                        <h6>MZN(MT) - USD($): 0,016  $  | USD($) - MZN(MT) : 63.25 MT  </h6>
-                    </p>
+                    <p>
+                    <b>NB:</b> acording to the currncy exchange rate of the  | de acordo com a taxa de cambio do dia : 
+                   compra do dollar hoje e:  $cotecao</b>
+                   </p>
 
                     
-                    <p>
-                        Your money: $n  MZN in metical | O seu dinhiro $n MZN em Metical
-                    </p>
+                    
                     <h6>Exchanged Money</h6>
             
                     <!-- form | formulário -->
                     <form action='' method=''>
+
+                  
+                      
                         <div>
-                            <label for=''>Now In USD$ dollar | Agora em USD$ dollar americano</label>
+                            <label for=''>   Your money: $n  R$ in real | O seu dinhiro $n R$ em Real</label>
                             <!-- <input type='number' name='n' id='n' required> -->
-                            <input type='text' value='$$u '>
+                            <input type='text' value=' " . numfmt_format_currency($padrao, $r, 'BRL') . "  '>
                         </div>
                         <div>
-                            <label for=''> Now In BRL real from brazil | Agora em BRL real brasileiro</label>
-                            <!-- <input type='number' name='n' id='n' required> -->
-                            <input type='text' value='$r R$'> 
+                        <label for=''>Now In USD$ dollar | Agora em USD$ dollar americano</label>
+                        <!-- <input type='number' name='n' id='n' required> -->
+                        <input type='text' value=' " . numfmt_format_currency($padrao, $dolar, 'USD') . "  '>
+                        </div>
+                        <div>
+                        <label for=''>Now In MZN Metical MT | Agora em MZN Metical de Mozambique</label>
+                        <label for=''>From: Google | 22/09/23, 19:52 UTC</label>
+                        
+                        <input type='text' value=' " . numfmt_format_currency($padrao, $metical, 'MZN') . "  '>
                         </div>
                     </form>
                 </di>

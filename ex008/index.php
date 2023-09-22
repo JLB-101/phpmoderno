@@ -31,8 +31,8 @@
     <p>Interaction with the form |
             Interação com o formulário</p>
 
-        <h1>Currency converter | conversor de moedas MT - US$ e RS$ </h1>
-        <p><b>NB: Saiba Quanto vale o Seu metical em: dollar americano US$ e reais brasileiro RS$</b> </p>
+        <h1>Currency converter | conversor de moedas RS$ - US$ </h1>
+        <p><b>NB: Saiba Quanto vale o Seu Real RS$ em dollar americano US$ <br> O valor de compra do dollar hoje e: <?php include_once("../ex008/testeapi.php"); echo $cotecao; ?></b> </p>
 
         <div class="container">
 
@@ -47,8 +47,8 @@
 
         <div class="container">
             <!-- form | formulário -->
-            <form action="cad.php" method="get">
-                <label for="sobrenome"> Digite o valor em MT </label>
+            <form action="converter.php" method="get">
+                <label for="sobrenome"> Quantos Reias tens na carteira  R$ </label>
                 <input type="number" name="n" id="n" required>
                 <input type="submit" value="$ Converter $">
             </form>
@@ -63,6 +63,7 @@
         <div class="container">
             <h3>Video da Aula:</h3>
             <p>
+            <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/01fQmB7aR5s?si=OYrkyVCGb6Gyn4Xw&amp;start=738" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 
             </p>
         </div>
