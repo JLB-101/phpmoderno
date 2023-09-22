@@ -26,36 +26,37 @@
        <h1>Resultados do procesamento</h1>
        
        <div class="container">
-
-        <?php
-            
-            //Eng: getting values 
-            $nome = $_POST["nome"] ?? "Sem nome";
-            $sobreNome = $_POST["sobrenome"]  ?? "desconhecido";
-
-            echo "<p> Welcome sr(a). <b>$nome $sobreNome </b>!!!  to my website <br> Bem vindo sr(a). <b>$nome $sobreNome </b>!!! ao meu website</p>";
-            echo "<a href='index.php'>voltar</a>";
-
-        ?>
-       </div>
-
-    </section>
-
-    <section class="section">
-       <h1>Resultados do procesamento</h1>
        
-       <div class="container">
-        <?php
-            //  Eng: junction of 3 superglobals $_GET, $_POST, $_COOKIES ||  Pt: junção de 3 superglobais $_GET, $_POST, $_COOKIES
-            var_dump($_POST)
+       
+        <?php 
 
+            //eng: Message  || pt: Variavel de Mensagem
+            $msg;
             
+            //eng: getting values from index.php  || pt: recebendo (pegendo) valores vindo de index.php
+            $n= $_POST["n"] ?? $msg="enter a number | digite um numero";
+
+           
+            echo"\n<form> <p> finding predecessor and successor of <b>$n</b> | achando antecessor e sucessor de <b>$n</b> </p> \n";
+            //operation: finding predecessor and successor || operacoes: achando antecessor e sucessor
+            $x = ($n-1);// get predecessor of (n)|| obter antecessor de (n)
+            $y = ($n+1);// get successor of (n)|| obter sucessor de (n)
+
+
+            //print result || imprimir resultado
+            echo "<p> the predecessor of $n  is: <b>$x</b> || <br> O antecessor de $n e: <b>$x<b></p>";
+            echo "<p> the successor of $n  is: <b>$x</b> || <br> O sucessor de $n e: <b>$y<b></p> </form>";
+            
+
         ?>
         <!-- Eng: return to previous page || Pt: voltar a pagina anterior -->
         <p><a href="javascript:history.go(-1)">voltar para pagina anterior</a></p>
+       
        </div>
 
     </section>
+
+   
 
     <section class="section">
         <div class="container">

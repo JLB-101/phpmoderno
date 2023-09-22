@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../ccstyle/index.css">
     <link rel="stylesheet" type="text/css" href="../ccstyle/menutop.css">
-    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="../ex007/index.css">
 </head>
 
 <body>
@@ -28,8 +28,11 @@
 
 
     <section class="section">
-        <p> Eng: interaction with the form ||
-            Pt: interação com o formulário</p>
+    <p>Interaction with the form |
+            Interação com o formulário</p>
+
+        <h1>Currency converter | conversor de moedas MT - US$ e RS$ </h1>
+        <p><b>NB: Saiba Quanto vale o Seu metical em: dollar americano US$ e reais brasileiro RS$</b> </p>
 
         <div class="container">
 
@@ -40,18 +43,14 @@
     </section class="section">
 
     <section class="section">
-        <p>Eng: Form: | Pt: Formulario</p>
+        <p>Click the button to get the number  Currency conversion| Clique no botao para obter a conversao da moeda </p>
 
         <div class="container">
             <!-- form | formulário -->
-            <form action="cad.php" method="POST">
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="idnome" required>
-
-                <label for="sobrenome">Sobrenome</label>
-                <input type="text" name="sobrenome" id="sobrenome" required>
-
-                <input type="submit" value="Enviar">
+            <form action="cad.php" method="get">
+                <label for="sobrenome"> Digite o valor em MT </label>
+                <input type="number" name="n" id="n" required>
+                <input type="submit" value="$ Converter $">
             </form>
 
             <!-- Eng: return to previous page || Pt: voltar a pagina anterior -->
@@ -64,12 +63,7 @@
         <div class="container">
             <h3>Video da Aula:</h3>
             <p>
-                <iframe class="" width="560" height="315"
-                    src="https://www.youtube.com/embed/tZf2mIAXTLw?si=_6BufT8vRdpPtRQ-" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
+                
             </p>
         </div>
         <section>

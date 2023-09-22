@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="../ccstyle/index.css">
-    <link rel="stylesheet" type="text/css" href="../ccstyle/menutop.css"> 
+    <link rel="stylesheet" type="text/css" href="../ccstyle/menutop.css">
+    <link rel="stylesheet" type="text/css" href="../ex006/index.css">
 </head>
+
 <body>
 
     <div class="topnav" id="myTopnav">
@@ -23,39 +26,41 @@
 
 
     <section class="section">
-       <h1>Resultados do procesamento</h1>
-       
-       <div class="container">
+        <h1>Resultados do procesamento</h1>
 
-        <?php
+        <div class="container">
+            <!-- php-code -->
+            <?php
+
+            //Ramdom generator number | Gerador de numero Aleatorio
+            $n = random_int(0, 100);
+
+            //print result | imprimir resultado 
+            echo "
+                <di>
+                    <p>
+                        Your random number is | O seu numero aleatorio e
+                    </p>
+    
             
-            //Eng: getting values 
-            $nome = $_POST["nome"] ?? "Sem nome";
-            $sobreNome = $_POST["sobrenome"]  ?? "desconhecido";
+                    <!-- form | formulário -->
+                    <form action='' method=''>
+                        <label for=''> Numero obtido.. !!!</label>
+                        <!-- <input type='number' name='n' id='n' required> -->
+                        <input type='text' value='$n'>
+                    </form>
+                </di>
+            ";
 
-            echo "<p> Welcome sr(a). <b>$nome $sobreNome </b>!!!  to my website <br> Bem vindo sr(a). <b>$nome $sobreNome </b>!!! ao meu website</p>";
-            echo "<a href='index.php'>voltar</a>";
+            ?>
+            <!-- Eng: return to previous page || Pt: voltar a pagina anterior -->
+            <p><a href="javascript:history.go(-1)">voltar para pagina anterior</a></p>
 
-        ?>
-       </div>
+        </div>
 
     </section>
 
-    <section class="section">
-       <h1>Resultados do procesamento</h1>
-       
-       <div class="container">
-        <?php
-            //  Eng: junction of 3 superglobals $_GET, $_POST, $_COOKIES ||  Pt: junção de 3 superglobais $_GET, $_POST, $_COOKIES
-            var_dump($_POST)
 
-            
-        ?>
-        <!-- Eng: return to previous page || Pt: voltar a pagina anterior -->
-        <p><a href="javascript:history.go(-1)">voltar para pagina anterior</a></p>
-       </div>
-
-    </section>
 
     <section class="section">
         <div class="container">
@@ -64,6 +69,7 @@
     </section>
     <!-- js scripts -->
     <script src="/js/topnav.js"></script>
-    <?php require_once("./view/footer.php"); ?>
+    <?php require_once("../view/footer.php"); ?>
 </body>
+
 </html>

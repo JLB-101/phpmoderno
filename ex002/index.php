@@ -37,8 +37,8 @@
 
             
             ?>
-
-
+            <!-- Eng: return to previous page || Pt: voltar a pagina anterior -->
+        <p><a href="javascript:history.go(-1)">voltar para pagina anterior</a></p>
         </div>
 
     </section class="section">
@@ -51,6 +51,7 @@
     </section>
     <!-- js scripts -->
     <script src="/js/topnav.js"></script>
+    <?php require_once("./view/footer.php"); ?>
 </body>
 
 </html>

@@ -28,7 +28,7 @@
 
 
     <section class="section">
-        <p> Eng: interaction with the form ||
+        <p> Eng: interaction with the form |
             Pt: interação com o formulário</p>
 
         <div class="container">
@@ -40,17 +40,13 @@
     </section class="section">
 
     <section class="section">
-        <p>Eng: Form: | Pt: Formulario</p>
+        <p>Enter a number | Diginte um numero</p>
 
         <div class="container">
             <!-- form | formulário -->
             <form action="cad.php" method="POST">
-                <label for="nome">Nome</label>
-                <input type="text" name="nome" id="idnome" required>
-
-                <label for="sobrenome">Sobrenome</label>
-                <input type="text" name="sobrenome" id="sobrenome" required>
-
+                <label for="sobrenome">Digite um numero</label>
+                <input type="number" name="n" id="n" required>
                 <input type="submit" value="Enviar">
             </form>
 
@@ -64,12 +60,7 @@
         <div class="container">
             <h3>Video da Aula:</h3>
             <p>
-                <iframe class="" width="560" height="315"
-                    src="https://www.youtube.com/embed/tZf2mIAXTLw?si=_6BufT8vRdpPtRQ-" title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen>
-                </iframe>
+                
             </p>
         </div>
         <section>

@@ -38,33 +38,38 @@
 
                     /*Eng: print | Pt: imprima*/
                     echo "<li style='color:blue ;'><a href='{$entry}'>{$entry}</a></li>";
-                } else {
+                } // else {
 
-                    /*Eng: dont print | Pt: não imprima*/
-                }
+                //     /*Eng: dont print | Pt: não imprima*/
+                // }
             }
             echo "</ul>";
             $d->close();
-
             ?>
         </div>
-
+        <!-- Eng: return to previous page || Pt: voltar a pagina anterior -->
+        <!-- <p><a href="javascript:history.go(-1)">voltar para pagina anterior</a></p> -->
     </section>
 
+    <!-- github repository -->
     <section class="section">
         <div class="container">
             <a href="https://github.com/gustavoguanabara/php-moderno" target="_blank" rel="noopener noreferrer">Resitorio de phpmoderno</a>
         </div>
     </section>
 
+
+    <!-- link to curso em video -->
     <section class="section">
         <div class="container">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/TfsO0BGvGn0?si=Js54HUIviEq8o9Oa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
     </section>
-    <!-- js scripts -->
-    <script src="/js/topnav.js"></script>
-    <!-- <?php require_once("./view/footer.php"); ?> -->
-</body>
 
+
+    <!-- js scripts -->
+    <script src="./js/topnav.js"></script>
+    <?php require_once("./view/footer.php"); ?>
+
+</body>
 </html>
