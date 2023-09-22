@@ -63,6 +63,7 @@
         <div class="container">
             <h3>Video da Aula:</h3>
             <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AvcUHrpGh8w?si=67uw5iVS4UPYo3V6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 
             </p>
         </div>
