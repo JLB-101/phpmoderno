@@ -31,7 +31,7 @@
     <p>Interaction with the form |
             Interação com o formulário</p>
 
-        <h1>Currency converter | conversor de moedas RS$ - US$ </h1>
+        <h1>Currency converter | conversor de moedas RS$ - US$ (v2.0)</h1>
         <p><b>NB: Saiba Quanto vale o Seu Real RS$ em dollar americano US$ <br> O valor de compra do dollar hoje e: <?php include_once("../ex008/testeapi.php"); echo $cotecao; ?></b> </p>
 
         <div class="container">
