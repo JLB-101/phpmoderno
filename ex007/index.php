@@ -16,7 +16,7 @@
 
 <body>
     <div class="topnav" id="myTopnav">
-        <a href="../index.php">PHP modero, </a>
+        <a href="../index.php">🦾PHP modero,🐘</a>
         <a href="https://youtube.com/playlist?list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_&si=5AJfj8OuyTrydVKF"
             target="_blank" rel="noopener noreferrer">By: Curso em Video</a>
         <a href="#contact">Contact</a>
@@ -31,8 +31,8 @@
     <p>Interaction with the form |
             Interação com o formulário</p>
 
-        <h1>Currency converter | conversor de moedas MT - US$ e RS$ </h1>
-        <p><b>NB: Saiba Quanto vale o Seu metical em: dollar americano US$ e reais brasileiro RS$</b> </p>
+        <h1>Currency converter | conversor de moedas 🪙 MT - US$ e RS$ </h1>
+        <p><b>NB: Saiba Quanto vale o Seu metical em: dollar americano US$ e reais brasileiro RS$ 💰 </b> </p>
 
         <div class="container">
 

@@ -14,7 +14,7 @@
 <body>
 
     <div class="topnav" id="myTopnav">
-        <a href="index.php" class="text">PHP modero, By:</a>
+        <a href="index.php" class="text">🤖PHP modero  🐘</a>
         <a href="https://youtube.com/playlist?list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_&si=5AJfj8OuyTrydVKF" target="_blank" rel="noopener noreferrer">Curso em Video</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
@@ -29,6 +29,7 @@
 
         <div class="container">
             <!-- PHP-scope -->
+            📁
             <?php
             $d = dir(".");
             echo "<ul>";
@@ -37,7 +38,7 @@
                 if ($entry[0] == "e" && $entry[1] == "x") {
 
                     /*Eng: print | Pt: imprima*/
-                    echo "<li style='color:blue ;'><a href='{$entry}'>{$entry}</a></li>";
+                    echo "📁<li style='color:blue ;'><a href='{$entry}'>{$entry}</a></li>";
                 } // else {
 
                 //     /*Eng: dont print | Pt: não imprima*/
