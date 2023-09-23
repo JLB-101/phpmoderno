@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP-moderno, curso em video <a
+    <title>PHP-moderno,  Desafio ex003 <a
             href="https://youtube.com/playlist?list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_&si=5AJfj8OuyTrydVKF"
             target="_blank" rel="noopener noreferrer">click aqui</a></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">

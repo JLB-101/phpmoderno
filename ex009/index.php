@@ -34,7 +34,7 @@
         <h1>Analyzing a real number |Analisando um numero real (v1.0)</h1>
         
         <div class="container">
-
+        <b>NB:</b>  Analyzing the number entered by user | Analisando o numero $n informado pelo usario: 
 
 
         </div>
@@ -46,9 +46,9 @@
 
         <div class="container">
             <!-- form | formulário -->
-            <form action="converter.php" method="get">
+            <form action="anlisizer.php" method="post">
                 <label for="sobrenome"> Analyse de um numero real </label>
-                <input type="number" name="n" id="n" required>
+                <input type="number" name="n" id="n" step="0.001" requered>
                 <input type="submit" value="Analizar 🔍︎">
             </form>
 
