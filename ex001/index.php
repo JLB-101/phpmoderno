@@ -12,9 +12,9 @@
 </head>
 
 <body>
-    <div class="topnav" id="myTopnav">
-        <a href="../index.php" class="" style="color: blue;">PHP modero, </a>
-        <a style="color: blue;" href="https://youtube.com/playlist?list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_&si=5AJfj8OuyTrydVKF" target="_blank" rel="noopener noreferrer">By: Curso em Video</a>
+<div class="topnav" id="myTopnav">
+        <a href="../index.php">PHP modero, 🐘</a>
+        <a href="https://youtube.com/playlist?list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_&si=5AJfj8OuyTrydVKF" target="_blank" rel="noopener noreferrer">By: Curso em Video</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
