@@ -34,8 +34,8 @@
             <h1> Anatomia de uma divisao (v1.0)</h1>
             <?php
             //getting datas from this page ||  pegando valor desta pagina
-            $x = $_GET["x"] ?? 0;
-            $y = $_GET["y"] ?? 0;
+            $dividendo = $_GET["x"] ?? 0;
+            $divisor = $_GET["y"] ?? 1;
             ?>
         </div>
 
@@ -54,7 +54,7 @@
                 </div>
                 <div>
                     <label for="sobrenome">Numero  divisor</label>
-                    <input type="number" name="y"  value="<?php $x; ?>"" requered>
+                    <input type="number" name="y"  value="<?php $x; ?>" requered>
                 </div>
 
 
@@ -70,15 +70,32 @@
     <section class="section">
 
         <div class="container">
-        <h1> Result | Resultado da divisao</h1>
+        <h1> Result | Resultado: Estrutura da divisao</h1>
             <?php
               
-              $soma = ($x+$y);
+              //calculos
+              $quociente = intdiv($dividendo, $divisor);
+              $resto = $dividendo % $divisor;
 
-                echo "  <label for='resultadoSoma'> A soma entre $x + $y e igual a: </label>";
-                echo "  <input type='number' value='$soma' >";
+                echo "<ul>";
+                echo "<li> Dividendo: $dividendo</li>";
+                echo "<li> Divisor: $divisor </li>";
+                echo "<li> Quociene: $quociente</li>";
+                echo "<li> Resto: $resto</li>";
+                echo "</ul>";
                 
             ?>
+
+            <table class="divisao">
+                <tr>
+                    <td><?=$dividendo ?></td>
+                    <td><?=$divisor ?></td>
+                </tr>
+                <tr>
+                    <td><?=$resto ?></td>
+                    <td><?=$quociente  ?></td>
+                </tr>
+            </table>
             <!-- Eng: return to previous page || Pt: voltar a pagina anterior -->
             <p><a href="javascript:history.go(-1)">voltar para pagina anterior</a></p>
 
