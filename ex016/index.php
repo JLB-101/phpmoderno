@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP-moderno,Desafio 10 Maquina do tempo - curso em video <a
+    <title>PHP-moderno,  Desafio 11 Reajustar Precos - curso em video <a
             href="https://youtube.com/playlist?list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_&si=5AJfj8OuyTrydVKF"
             target="_blank" rel="noopener noreferrer">click aqui</a></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,7 +16,7 @@
 
 <body>
     <div class="topnav" id="myTopnav">
-        <a href="../index.php">PHP modero,🐘 </a>
+        <a href="../index.php">PHP modero,🐘</a>
         <a href="https://youtube.com/playlist?list=PLHz_AreHm4dlFPrCXCmd5g92860x_Pbr_&si=5AJfj8OuyTrydVKF"
             target="_blank" rel="noopener noreferrer">By: Curso em Video</a>
         <a href="#contact">Contact</a>
@@ -30,44 +30,44 @@
     <section class="section">
         <div class="container">
             <p>Interaction with the form | Interação com o formulário</p>
-            <h1>Maquina do tempo(v1.0)</h1>
+            <h1> Reajuste de  Precos (v1.0)</h1>
         </div>
     </section class="section">
 
     <script>
         // php
         <?php
-        $x = $_GET['x'] ?? 1975;
-        $nasc = $x;
-        $atual = date("Y");
-
-
+        $v = $_REQUEST['v'] ?? 0;//price--preco
+        $r = $_REQUEST['x'] ?? 0;//resize --reajuste
+        
+        
 
         ?>
     </script>
 
     <section class="section">
-        <p>informe o numero para calcular as medias</p>
+        <p>informe as valor, para Saber Quanto sera apos aplica a porcentagen de reajuste</p>
         <div class="container">
             <!-- form | formulário -->
             <form action="<?= $_SERVER['PHP_SELF'] ?>" method="GET">
                 <div>
-                    <label for="sobrenome"> Data atual</label>
-                    <input type="number" name="y" id="y" value="<?= $atual; ?>" step="0.001" requered>
-                    <label for="sobrenome">Data nascimento</label>
-                    <input type="number" name="x" id="x" value="<?= $x; ?>" step="0.001" requered>
+                    <label for="sobrenome"> Preco do produto</label>
+                    <input type="number" name="v" id="v" value="<?=$v; ?>" step="0.001" requered>
+                    <label for="sobrenome">Peracetagem de reajuste <b>(<?=$r; ?>%)</b></label>
+                    <input type="range" name="x" id="x"   step="1" requered>
                 </div>
-
-                <input type="submit" value="Calcular 🔍︎">
+              
+                <input type="submit" value="Reajustar 🔍︎">
             </form>
 
             <form action="">
                 <?php
-                //calcular as raizes
-                $idade = ($atual - $nasc);
-
-                echo "<p>Quem nasceu em <b>$nasc</b>, <b> tem " . number_format($idade, 2, ",", ".") . " </b> Anos</p>";
-
+                //calcular rejuste
+                $aumento = (($v * $r) / 100) ;
+                $novo = ($v + $aumento);
+               
+                echo "<p> O produto que custava  <b>$v MTN</b>, com <b>{$r}</b> de aumento, vai passar a custar <b>  ". number_format($novo, 2, ",", ".") . " MTN </b></p>";
+               
                 ?>
             </form>
 
